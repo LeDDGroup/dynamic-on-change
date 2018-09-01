@@ -1,0 +1,31 @@
+{
+  "name": "uniform",
+  "version": "1.0.0",
+  "description": "an utility for managing complicated data structures",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && webpack --config webpack.config.js",
+    "test": "npm run build && node ./dist/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeDDGroup/uniform"
+  },
+  "keywords": [
+    "react",
+    "form",
+    "data",
+    "onChange"
+  ],
+  "author": "David Perez Alvarez, Daniel Perez Alvarez",
+  "license": "MIT",
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.0",
+    "prettier": "^1.13.7",
+    "tslint": "^5.11.0",
+    "tslint-microsoft-contrib": "^5.1.0",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0"
+  }
+}

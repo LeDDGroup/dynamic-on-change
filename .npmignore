@@ -1,0 +1,9 @@
+.cache
+/src/*
+test
+index.ts
+tsconfig.json
+.travis.yml
+assets
+demo
+webpack.config.js
