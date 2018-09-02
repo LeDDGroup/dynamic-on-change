@@ -4,9 +4,14 @@
   "description": "an utility for managing complicated data structures",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "rm -rf dist && webpack --config webpack.config.js",
-    "test": "npm run build && node ./dist/test"
+    "prepare": "npm run build",
+    "build": "tsc",
+    "prebuild": "rm -rf dist",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -21,11 +26,30 @@
   "author": "David Perez Alvarez, Daniel Perez Alvarez",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^23.3.1",
     "awesome-typescript-loader": "^5.2.0",
+    "jest": "^23.5.0",
     "prettier": "^1.13.7",
+    "ts-jest": "^23.1.4",
     "tslint": "^5.11.0",
     "tslint-microsoft-contrib": "^5.1.0",
+    "typescript": "^3.0.3",
     "webpack": "^4.16.1",
     "webpack-cli": "^3.1.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "testRegex": "test/.*\\.ts$"
   }
 }
