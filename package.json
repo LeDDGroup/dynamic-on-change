@@ -30,10 +30,6 @@
       "no-console": "on"
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LeDDGroup/uniform"
-  },
   "keywords": [
     "typescript"
   ],
@@ -67,5 +63,14 @@
       }
     },
     "testRegex": ".*\\.test\\.ts$"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeDDGroup/dynamic-on-change.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LeDDGroup/dynamic-on-change/issues"
+  },
+  "homepage": "https://github.com/LeDDGroup/dynamic-on-change#readme"
 }
