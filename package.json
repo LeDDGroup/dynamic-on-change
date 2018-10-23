@@ -1,7 +1,7 @@
 {
-  "name": "uniform",
+  "name": "dynamic-on-change",
   "version": "1.0.0",
-  "description": "an utility for managing complicated data structures",
+  "description": "an utility for managing on change functions",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "files": [
