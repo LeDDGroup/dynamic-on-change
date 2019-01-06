@@ -1,5 +1,7 @@
 # dynamic-on-change
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/LeDDGroup/dynamic-on-change.svg)](https://greenkeeper.io/)
+
 An utility for managing on change functions.
 This is meant to be used with react components for avoiding binding instance methods.
 
